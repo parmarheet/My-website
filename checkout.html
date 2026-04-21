@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Luma Atelier</title>
+    <meta
+      name="description"
+      content="Minimal checkout with real-time cart updates, clean order summary, and flexible payment options."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="checkout">
+    <div class="site-shell">
+      <div class="promo-banner">
+        <span>Summer Sale</span>
+        <strong>Seasonal offers are reflected in checkout for eligible items.</strong>
+        <a href="catalog.html">Continue shopping</a>
+      </div>
+      <header class="topbar" data-sticky-nav>
+        <a class="brandmark" href="index.html">
+          <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+          <span class="brandmark__name">
+            <strong>Luma Atelier</strong>
+            <span>Premium Commerce</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="catalog.html">Shop</a>
+          <a href="account.html">Account</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-button icon-button--cart" href="checkout.html">
+            <span>Cart</span>
+            <strong data-cart-count>0</strong>
+          </a>
+        </div>
+      </header>
+
+      <main class="section">
+        <div class="section__header">
+          <p class="eyebrow">Checkout</p>
+          <h1>Minimal steps, premium feel.</h1>
+        </div>
+        <div class="checkout-layout">
+          <section class="checkout-form card">
+            <form data-checkout-form>
+              <div class="form-grid">
+                <label>
+                  Full name
+                  <input required name="name" type="text" placeholder="Avery Morgan" />
+                </label>
+                <label>
+                  Email
+                  <input required name="email" type="email" placeholder="avery@example.com" />
+                </label>
+                <label class="form-grid__wide">
+                  Shipping address
+                  <input required name="address" type="text" placeholder="145 Mercer Street, New York, NY" />
+                </label>
+                <label>
+                  City
+                  <input required name="city" type="text" placeholder="New York" />
+                </label>
+                <label>
+                  ZIP
+                  <input required name="zip" type="text" placeholder="10012" />
+                </label>
+                <label>
+                  Payment provider
+                  <select name="provider">
+                    <option value="Stripe">Stripe</option>
+                    <option value="Razorpay">Razorpay</option>
+                  </select>
+                </label>
+                <label>
+                  Delivery speed
+                  <select name="delivery">
+                    <option value="Express">Express</option>
+                    <option value="Standard">Standard</option>
+                  </select>
+                </label>
+              </div>
+              <button class="button button--primary button--full" type="submit">Place order</button>
+            </form>
+          </section>
+          <aside class="order-summary card" data-order-summary></aside>
+        </div>
+      </main>
+    </div>
+
+    <aside class="assistant-widget" data-assistant>
+      <button class="assistant-toggle" type="button" data-assistant-toggle aria-expanded="false">
+        Assistant
+      </button>
+      <div class="assistant-panel" hidden>
+        <div class="assistant-panel__header">
+          <div>
+            <span class="eyebrow">Luma Concierge</span>
+            <strong>Checkout assistant</strong>
+          </div>
+          <button type="button" class="assistant-close" data-assistant-close aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" data-assistant-messages></div>
+        <div class="assistant-actions">
+          <button type="button" class="chip" data-assistant-prompt="Explain payment options">Payment options</button>
+          <button type="button" class="chip" data-assistant-prompt="Do you have express delivery?">Express delivery</button>
+          <button type="button" class="chip" data-assistant-prompt="Help me review my cart">Review my cart</button>
+        </div>
+        <form class="assistant-form" data-assistant-form>
+          <input type="text" name="message" placeholder="Ask about checkout..." />
+          <button class="button button--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Luma Atelier</title>
+    <meta
+      name="description"
+      content="Admin dashboard for managing products, orders, users, and commerce analytics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="admin">
+    <div class="site-shell">
+      <div class="promo-banner">
+        <span>Summer Sale</span>
+        <strong>Monitor seasonal performance across products, orders, and revenue in one place.</strong>
+        <a href="catalog.html">View storefront</a>
+      </div>
+      <header class="topbar" data-sticky-nav>
+        <a class="brandmark" href="index.html">
+          <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+          <span class="brandmark__name">
+            <strong>Luma Atelier</strong>
+            <span>Premium Commerce</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="catalog.html">Storefront</a>
+          <a href="account.html">Accounts</a>
+          <a href="checkout.html">Orders</a>
+        </nav>
+      </header>
+
+      <main class="section">
+        <div class="section__header">
+          <p class="eyebrow">Admin</p>
+          <h1>Commerce command center</h1>
+        </div>
+        <div class="admin-grid">
+          <section class="card analytics-panel" data-analytics-panel></section>
+          <section class="card product-admin-panel" data-product-admin></section>
+          <section class="card table-panel" data-order-admin></section>
+          <section class="card table-panel" data-user-admin></section>
+        </div>
+      </main>
+    </div>
+
+    <aside class="assistant-widget" data-assistant>
+      <button class="assistant-toggle" type="button" data-assistant-toggle aria-expanded="false">
+        Assistant
+      </button>
+      <div class="assistant-panel" hidden>
+        <div class="assistant-panel__header">
+          <div>
+            <span class="eyebrow">Luma Concierge</span>
+            <strong>Admin assistant</strong>
+          </div>
+          <button type="button" class="assistant-close" data-assistant-close aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" data-assistant-messages></div>
+        <div class="assistant-actions">
+          <button type="button" class="chip" data-assistant-prompt="Summarize sales">Sales summary</button>
+          <button type="button" class="chip" data-assistant-prompt="Which products are low stock?">Low stock</button>
+          <button type="button" class="chip" data-assistant-prompt="Top accessories">Top accessories</button>
+        </div>
+        <form class="assistant-form" data-assistant-form>
+          <input type="text" name="message" placeholder="Ask about store operations..." />
+          <button class="button button--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

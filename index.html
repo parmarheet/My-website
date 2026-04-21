@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luma Atelier | Premium Commerce</title>
+    <meta
+      name="description"
+      content="Luma Atelier is a premium storefront experience with curated essentials, fast browsing, and a refined checkout journey."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <div class="promo-banner">
+        <span>Summer Sale</span>
+        <strong>Up to 40% off selected styles, accessories, and audio through July 31.</strong>
+        <a href="catalog.html?search=summer">Shop the sale</a>
+      </div>
+      <header class="topbar" data-sticky-nav>
+        <a class="brandmark" href="index.html">
+          <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+          <span class="brandmark__name">
+            <strong>Luma Atelier</strong>
+            <span>Premium Commerce</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="catalog.html?category=Men">Men</a>
+          <a href="catalog.html?category=Women">Women</a>
+          <a href="catalog.html?category=Electronics">Electronics</a>
+          <a href="catalog.html?category=Accessories">Accessories</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <label class="search-pill">
+            <span>Search</span>
+            <input data-search-input type="search" placeholder="Sneakers, audio, bags..." />
+          </label>
+          <a class="icon-button" href="account.html" aria-label="Account">A</a>
+          <a class="icon-button icon-button--cart" href="checkout.html" aria-label="Cart">
+            <span>Cart</span>
+            <strong data-cart-count>0</strong>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__content fade-in-up">
+            <p class="eyebrow">Spring / Summer 2026</p>
+            <h1>Commerce that feels editorial, fast, and unmistakably premium.</h1>
+            <p class="hero__copy">
+              Curated products, immersive storytelling, and a checkout flow built for modern brands.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="catalog.html">Shop Collection</a>
+              <a class="button button--secondary" href="#featured">Explore Highlights</a>
+            </div>
+            <div class="hero__metrics">
+              <div>
+                <strong>18k+</strong>
+                <span>Orders shipped</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>24 hrs</strong>
+                <span>Dispatch window</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <article class="hero-card hero-card--primary slide-in-right">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
+                alt="Premium sneakers"
+              />
+              <div class="hero-card__meta">
+                <span>Signature drop</span>
+                <strong>Velocity Runner</strong>
+              </div>
+            </article>
+            <article class="hero-card hero-card--floating fade-in-up delay-2">
+              <span>Fast checkout</span>
+              <strong>One-tap buy now</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="section categories">
+          <div class="section__header">
+            <p class="eyebrow">Browse by category</p>
+            <h2>Built for multiple verticals, styled like a flagship brand.</h2>
+          </div>
+          <div class="category-grid" data-category-grid></div>
+        </section>
+
+        <section class="section featured" id="featured">
+          <div class="section__header">
+            <p class="eyebrow">Featured products</p>
+            <h2>Best-selling essentials with subtle motion and crisp product storytelling.</h2>
+            <a class="text-link" href="catalog.html">View all products</a>
+          </div>
+          <div class="product-grid" data-featured-products></div>
+        </section>
+
+        <section class="section showcase">
+          <div class="showcase__content">
+            <p class="eyebrow">Designed for growth</p>
+            <h2>A storefront foundation that scales from launch week to high-volume campaigns.</h2>
+            <ul class="feature-list">
+              <li>SEO-friendly multi-page structure with clean metadata</li>
+              <li>Real-time cart, flexible checkout, and persistent account state</li>
+              <li>Admin-ready product, order, and user management panels</li>
+            </ul>
+          </div>
+          <div class="showcase__cards">
+            <article class="glass-card">
+              <span>Revenue</span>
+              <strong>$184,240</strong>
+              <small>+18.4% vs last month</small>
+            </article>
+            <article class="glass-card">
+              <span>Conversion</span>
+              <strong>5.82%</strong>
+              <small>Mobile-first checkout optimizations</small>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <a class="brandmark" href="index.html">
+            <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+            <span class="brandmark__name">
+              <strong>Luma Atelier</strong>
+              <span>Premium Commerce</span>
+            </span>
+          </a>
+          <p>Modern commerce starter for premium digital retail.</p>
+        </div>
+        <div class="footer__links">
+          <a href="catalog.html">Shop</a>
+          <a href="account.html">Account</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="assistant-widget" data-assistant>
+      <button class="assistant-toggle" type="button" data-assistant-toggle aria-expanded="false">
+        Assistant
+      </button>
+      <div class="assistant-panel" hidden>
+        <div class="assistant-panel__header">
+          <div>
+            <span class="eyebrow">Luma Concierge</span>
+            <strong>Shopping assistant</strong>
+          </div>
+          <button type="button" class="assistant-close" data-assistant-close aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" data-assistant-messages></div>
+        <div class="assistant-actions">
+          <button type="button" class="chip" data-assistant-prompt="Show me summer accessories">Summer accessories</button>
+          <button type="button" class="chip" data-assistant-prompt="What is best for travel?">Travel picks</button>
+          <button type="button" class="chip" data-assistant-prompt="Best audio products">Audio gear</button>
+        </div>
+        <form class="assistant-form" data-assistant-form>
+          <input type="text" name="message" placeholder="Ask for product recommendations..." />
+          <button class="button button--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

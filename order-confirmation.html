@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed | Luma Atelier</title>
+    <meta
+      name="description"
+      content="Order confirmation page with receipt summary, shipping context, and follow-up actions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="confirmation">
+    <div class="site-shell">
+      <div class="promo-banner">
+        <span>Summer Sale</span>
+        <strong>Your order is confirmed. Seasonal picks are still available while stock lasts.</strong>
+        <a href="catalog.html">Keep shopping</a>
+      </div>
+      <header class="topbar" data-sticky-nav>
+        <a class="brandmark" href="index.html">
+          <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+          <span class="brandmark__name">
+            <strong>Luma Atelier</strong>
+            <span>Premium Commerce</span>
+          </span>
+        </a>
+      </header>
+
+      <main class="section">
+        <section class="confirmation-card card" data-confirmation-panel></section>
+      </main>
+    </div>
+
+    <aside class="assistant-widget" data-assistant>
+      <button class="assistant-toggle" type="button" data-assistant-toggle aria-expanded="false">
+        Assistant
+      </button>
+      <div class="assistant-panel" hidden>
+        <div class="assistant-panel__header">
+          <div>
+            <span class="eyebrow">Luma Concierge</span>
+            <strong>Post-order assistant</strong>
+          </div>
+          <button type="button" class="assistant-close" data-assistant-close aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" data-assistant-messages></div>
+        <div class="assistant-actions">
+          <button type="button" class="chip" data-assistant-prompt="Recommend my next purchase">Next purchase</button>
+          <button type="button" class="chip" data-assistant-prompt="Best summer accessories">Summer accessories</button>
+          <button type="button" class="chip" data-assistant-prompt="Where is my order?">Order status</button>
+        </div>
+        <form class="assistant-form" data-assistant-form>
+          <input type="text" name="message" placeholder="Ask a follow-up question..." />
+          <button class="button button--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

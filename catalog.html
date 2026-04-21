@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop the Collection | Luma Atelier</title>
+    <meta
+      name="description"
+      content="Browse premium fashion, accessories, and electronics with fast filters and responsive product discovery."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="catalog">
+    <div class="site-shell">
+      <div class="promo-banner">
+        <span>Summer Sale</span>
+        <strong>Fresh seasonal markdowns across accessories, women, men, and electronics.</strong>
+        <a href="catalog.html?search=summer">Explore deals</a>
+      </div>
+      <header class="topbar" data-sticky-nav>
+        <a class="brandmark" href="index.html">
+          <img class="brandmark__logo" src="assets/img/favicon.svg" alt="Luma Atelier" />
+          <span class="brandmark__name">
+            <strong>Luma Atelier</strong>
+            <span>Premium Commerce</span>
+          </span>
+        </a>
+        <nav class="nav-links">
+          <a href="catalog.html?category=Men">Men</a>
+          <a href="catalog.html?category=Women">Women</a>
+          <a href="catalog.html?category=Electronics">Electronics</a>
+          <a href="catalog.html?category=Accessories">Accessories</a>
+        </nav>
+        <div class="nav-actions">
+          <label class="search-pill">
+            <span>Search</span>
+            <input data-search-input type="search" placeholder="Search products..." />
+          </label>
+          <a class="icon-button icon-button--cart" href="checkout.html">
+            <span>Cart</span>
+            <strong data-cart-count>0</strong>
+          </a>
+        </div>
+      </header>
+
+      <main class="section">
+        <div class="section__header">
+          <p class="eyebrow">Discover</p>
+          <h1>Curated catalog</h1>
+          <p class="section__copy">Responsive filtering, premium cards, and quick product access.</p>
+        </div>
+        <div class="catalog-layout">
+          <aside class="filter-panel">
+            <h3>Filters</h3>
+            <div class="filter-group">
+              <label for="category-filter">Category</label>
+              <select id="category-filter" data-category-filter></select>
+            </div>
+            <div class="filter-group">
+              <label for="sort-filter">Sort</label>
+              <select id="sort-filter" data-sort-filter>
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to high</option>
+                <option value="price-desc">Price: High to low</option>
+                <option value="rating">Top rated</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="stock-filter">Availability</label>
+              <select id="stock-filter" data-stock-filter>
+                <option value="all">All products</option>
+                <option value="in-stock">In stock</option>
+                <option value="low-stock">Low stock</option>
+              </select>
+            </div>
+          </aside>
+          <section class="catalog-results">
+            <div class="catalog-toolbar">
+              <strong data-results-title>All products</strong>
+              <span data-results-count></span>
+            </div>
+            <div class="product-grid" data-catalog-products></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <aside class="assistant-widget" data-assistant>
+      <button class="assistant-toggle" type="button" data-assistant-toggle aria-expanded="false">
+        Assistant
+      </button>
+      <div class="assistant-panel" hidden>
+        <div class="assistant-panel__header">
+          <div>
+            <span class="eyebrow">Luma Concierge</span>
+            <strong>Shopping assistant</strong>
+          </div>
+          <button type="button" class="assistant-close" data-assistant-close aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" data-assistant-messages></div>
+        <div class="assistant-actions">
+          <button type="button" class="chip" data-assistant-prompt="Best accessories under $150">Accessories under $150</button>
+          <button type="button" class="chip" data-assistant-prompt="Show me best sellers">Best sellers</button>
+          <button type="button" class="chip" data-assistant-prompt="What is good for summer?">Summer picks</button>
+        </div>
+        <form class="assistant-form" data-assistant-form>
+          <input type="text" name="message" placeholder="Ask for product recommendations..." />
+          <button class="button button--primary" type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
